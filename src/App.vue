@@ -2,7 +2,7 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Staff</span>
+        <span>Patient</span>
         <span class="font-weight-light">EDITOR</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -22,11 +22,11 @@
     </v-toolbar>
 
     <v-content>
-      <v-container fluid>
+      
         <transition name="fade" mode="out-in">
           <router-view></router-view>
         </transition>
-      </v-container>
+      
     </v-content>
   </v-app>
 </template>
@@ -35,6 +35,15 @@
 
 export default {
   name: 'App',
+  data: {
+  theme: {
+    primary: '#3f51b5',
+    secondary: '#b0bec5',
+    accent: '#8c9eff',
+    error: '#b71c1c'
+  }
+
+  },
   components: {
     
   },

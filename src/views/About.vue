@@ -1,8 +1,7 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
 
 <template>
+  <v-container fluid grid-list-md>
+    <h1>This is an about page</h1>
   <v-card
     class=""
     color="#26c6da"
@@ -49,7 +48,6 @@
       </v-list-tile>
     </v-card-actions>
   </v-card>
+  </v-container>
 </template>
 
-  </div>
-</template>
